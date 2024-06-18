@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <locale.h>
+int main(void) {
+  setlocale(LC_ALL, "");
+  char b;
+  double s,a;  
+  scanf("%lf%c%lf",&s,&b,&a); 
+  switch (b) {
+    case '+' : printf("%.2lf", s+a); break;
+    case '-' : printf("%.2lf", s-a); break;
+    case '*' : printf("%.2lf", s*a); break; 
+    case '/' : printf("%.2lf", s/a); break; 
+          default: printf("ERROR!\n");
+  }
+ return 0;
+}
